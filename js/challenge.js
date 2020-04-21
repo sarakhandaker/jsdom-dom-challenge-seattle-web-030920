@@ -64,7 +64,7 @@ pause.addEventListener('click', function(e) {
     event.preventDefault();
         let p = document.createElement('p')
         p.innerHTML = document.getElementById('comment-input').value
-        document.body.appendChild(p)
+        document.querySelector("#list").appendChild(p)
         event.target.reset();
   });
 
